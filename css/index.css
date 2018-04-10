@@ -3,10 +3,16 @@ html {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Ubuntu-R";
+  src: url("../font/Ubuntu-R.ttf");
+
+}
+
 body {
   position: relative;
   min-height: 100%;
-  font-family: "Ubuntu";
+  font-family: "Ubuntu-R";
   font-size: 12px;
   margin: 0;
   background-color: #FFFFFF;
