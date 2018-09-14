@@ -1,0 +1,131 @@
+/*
+#D4EDF7 - light blue
+#347B98 - mid blue
+#FB9902 - vibrant orange
+#4424D6 - vibrant blue
+#110934 - dark blue
+
+*/
+
+@font-face {
+  font-family: Roboto-R;
+  src: url("fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu-R;
+  src: url("fonts/Ubuntu-R.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu-B;
+  src: url("fonts/Ubuntu-B.ttf");
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  font-family: Ubuntu-R;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+b {
+  font-family: Ubuntu-B;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #FB9902;
+}
+
+button {
+  padding: 6px 10px;
+  border: none;
+  border-left: 4px solid #110934;
+  border-right: 4px solid #110934;
+  border-radius: 3px;
+  /* border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; */
+  background-color: #FB9902;
+  color: #110934;
+  font-family: Ubuntu-B;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.09s ease-in-out;
+}
+
+button:hover {
+  background-color: #dbb05b;
+}
+
+input[type="text"] {
+  padding: 1px 4px 2px 4px;
+  font-size: 16px;
+  border-right: none;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-left: none;
+  border-radius: 0px;
+  background-color: #CCCCCC;
+  color: #000000;
+  box-sizing: border-box;
+  transition: 0.09s ease-in-out;
+}
+
+.textbox {
+  display: inline-block;
+  height: 28px;
+}
+
+.button {
+  display: inline-block;
+  width: 82.9167px;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  border-bottom: 3px solid #000000;
+  background-color: #DDDDDD;
+}
+
+#hidable {
+  position: relative;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  width: auto;
+  padding: 8px;
+  background-color: #00000022;
+}
+
+#top {
+  margin: 0 0;
+}
+
+#top #title {
+  color: #FB9902;
+  background-color: #110934;
+  padding: 16px 24px;
+  text-align: center;
+}
+
+#top #content {
+  margin: 24px 8px 0 8px;
+}
+
+#phpbit {
+  padding: 16px 16px 16px 16px;
+  color: #110934;
+  background-color: #347B98;
+  height: 100%;
+  display: block;
+}
