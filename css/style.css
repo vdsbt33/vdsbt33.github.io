@@ -1,0 +1,135 @@
+/*
+Color Palette:
+#F6F6ED
+#D8DBB3
+#B4B96F
+#7E833F
+#272816
+*/
+
+@font-face {
+  font-family: Title;
+  src: url("./font/Peace_Sans.otf");
+}
+
+@font-face {
+  font-family: Regular;
+  src: url("./font/Metropolis-Regular.otf");
+}
+
+@font-face {
+  font-family: Bold;
+  src: url("./font/Metropolis-Bold.otf");
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: Regular;
+  font-size: 13pt;
+  background-color: #F6F6ED;
+}
+
+b {
+  font-family: Bold;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+button {
+  background-color: #D8DBB3;
+  border: 1px solid #000000;
+  border-radius: 2pt;
+  padding: 2pt 3pt;
+  cursor: pointer;
+  transition: 0.08s background-color;
+}
+
+button:hover {
+  background-color: #E9ECC4;
+}
+
+#header {
+  display: block;
+  background-color: #000000;
+  margin: 0 0 6vh 0;
+  position: relative;
+}
+
+#header #title {
+  text-align: center;
+  padding: 2vh 6vw;
+  font-family: Title;
+  color: #F6F6ED;
+  background-image: url("../img/london_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  font-size: 8vw;
+}
+
+#header #title #text {
+  text-shadow: 1px 1px 8px #000000AA;
+}
+
+#content {
+  padding: 0 2vw;
+}
+
+/* Table */
+#expensesTable {
+  user-select: none;
+  -moz-user-select: none;
+  box-shadow: 0.5pt 0.5px 2pt 1px #00000022;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #000000;
+  text-align: center;
+  cursor: default;
+}
+
+caption {
+  background-color: #7E833F;
+  color: #FFFFFF;
+  border: 1px solid #00000022;
+  border-bottom: none;
+  padding: 6pt 0;
+  font-family: Bold;
+}
+
+th {
+  background-color: #B4B96F;
+  padding: 6pt 0;
+  font-family: Bold;
+}
+
+td {
+  padding: 2pt;
+}
+
+th, td {
+  border: 1px solid #00000022;
+}
+
+tr {
+  transition: 0.08s background-color;
+}
+
+tr:hover {
+  background-color: #0000001A;
+}
+tr:nth-child(odd):hover {
+  background-color: #bfc495;
+}
+
+tr:nth-child(odd) {
+  background-color: #D8DBB3;
+}

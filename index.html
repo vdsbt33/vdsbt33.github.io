@@ -1,28 +1,77 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr"/>
   <head>
-    <meta charset="utf-8">
-    <title>Teacher's Diary</title>
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/teachersdiary_style.css">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <title>Expenses Book</title>
   </head>
   <body>
-
-    <span class="pageEnd"></span>
-    <div id="content">
-      <div id="introduction">
-        <span class="t_s2"> Welcome </span>
-        <span class="t_s3">to the</span>
-        <span class="t_s1">Teacher's Diary</span>
+    <div id="header">
+      <div id="title">
+        <h3 id ="text">Expenses Book</h3>
       </div>
-
-      <article>
-        Article content
-      </article>
-
     </div>
+
+    <div id="content">
+      <div id="expensesTable">
+        <table>
+          <caption>
+            Expenses List
+          </caption>
+          <tr>
+            <th>Name</th>
+            <th>Value</th>
+            <th>Type</th>
+            <th>Date</th>
+            <th>Paid?</th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>Content</td>
+            <td>Content</td>
+            <td>Content</td>
+            <td>Content</td>
+            <td>Content</td>
+            <td><button>Edit</button></td>
+            <td><button>Remove</button></td>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td>Value</td>
+            <td>Type</td>
+            <td>Date</td>
+            <td>Paid?</td>
+            <td><button>Edit</button></td>
+            <td><button>Remove</button></td>
+          </tr>
+          <tr>
+            <td>Content Very Long</td>
+            <td>R$1000,00</td>
+            <td>Type Z</td>
+            <td>22/07/2018 14:55</td>
+            <td>Yes</td>
+            <td><button>Edit</button></td>
+            <td><button>Remove</button></td>
+          </tr>
+          <tr>
+            <td>Buy website domain</td>
+            <td>R$59,98</td>
+            <td>Digital</td>
+            <td>10/10/2018 12:47</td>
+            <td>No</td>
+            <td><button>Edit</button></td>
+            <td><button>Remove</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
     <div id="footer">
-      footer
+
     </div>
   </body>
 </html>
