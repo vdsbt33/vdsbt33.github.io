@@ -29,6 +29,7 @@ html {
 
 body {
   min-height: 100%;
+  font-size: 16px;
   margin: 0;
   font-family: Metropolis;
   color: #FFFFFF;
@@ -47,14 +48,14 @@ header {
 
 header #title {
   font-family: Potra;
-  font-size: 36px;
+  font-size: 320%;
   text-align: center;
   text-shadow: 0 0 3px #FFFFFF, 0 0 3px #FF00AB, 0 0 2px #EE33FF;
 }
 
 a {
   font-family: CaviarDreams;
-  font-size: 18px;
+  font-size: 120%;
   color: #DD77DD;
   text-decoration: none;
   transition: 0.09s ease-out text-shadow, 0.09s ease-out color;
@@ -87,6 +88,7 @@ p {
 }
 
 article {
+  font-size: 120%;
   background-color: #000000AA;
   margin: 0 5vw;
   padding: 10px 12px 10px 12px;
@@ -112,7 +114,7 @@ button {
   background-color: #00000000;
   color: #DD77DD;
   font-family: CaviarDreams;
-  font-size: 18px;
+  font-size: 100%;
   text-shadow: 0 0 2px #FFFFFF88, 0 0 2px #FF00AB88, 0 0 1px #EE33FF88;
   box-shadow: 0 0 2px #FFFFFF88, 0 0 2px #FF00AB88, 0 0 1px #EE33FF88;
   transition: 0.04s ease-out text-shadow, 0.04s ease-out box-shadow, 0.04s ease-out color;
