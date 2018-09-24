@@ -41,6 +41,7 @@ body {
 	-o-background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-clip: content-box;
 }
 
 header {
