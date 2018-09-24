@@ -1,135 +1,139 @@
-/*
-Color Palette:
-#F6F6ED
-#D8DBB3
-#B4B96F
-#7E833F
-#272816
-*/
-
 @font-face {
-  font-family: Title;
+  font-family: Peace;
   src: url("./font/Peace_Sans.otf");
 }
 
 @font-face {
-  font-family: Regular;
+  font-family: Metropolis;
   src: url("./font/Metropolis-Regular.otf");
 }
 
 @font-face {
-  font-family: Bold;
-  src: url("./font/Metropolis-Bold.otf");
+  font-family: Metropolis-EL;
+  src: url("./font/Metropolis-ExtraLight.otf");
+}
+
+@font-face {
+  font-family: Potra;
+  src: url("./font/Potra.ttf");
+}
+
+@font-face {
+  font-family: CaviarDreams;
+  src: url("./font/CaviarDreams.ttf");
 }
 
 html {
-  height: 100vh;
+  height: 100%;
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100%;
   margin: 0;
-  font-family: Regular;
-  font-size: 13pt;
-  background-color: #F6F6ED;
+  font-family: Metropolis;
+  color: #FFFFFF;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-b {
-  font-family: Bold;
+header {
+  margin: 14px 0;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+header #title {
+  font-family: Potra;
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 0 0 3px #FFFFFF, 0 0 3px #FF00AB, 0 0 2px #EE33FF;
+}
+
+a {
+  font-family: CaviarDreams;
+  font-size: 18px;
+  color: #DD77DD;
+  text-decoration: none;
+  transition: 0.09s ease-out text-shadow, 0.09s ease-out color;
+  text-shadow: 0 0 3px #FF00AB, 0 0 2px #EE33FF;
+}
+
+a:hover {
+  text-shadow: 0 0 3px #FFFFFF, 0 0 3px #FF00AB, 0 0 2px #EE33FF;
+  color: #FFFFFF;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 8px;
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 0;
+  margin: 0 0 16px 0;
 }
 
+p {
+  margin: 12px 0 0 0;
+}
+
+article {
+  background-color: #000000AA;
+  margin: 0 5vw;
+  padding: 10px 12px 10px 12px;
+  margin-bottom: 16px;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+footer {
+  text-align: center;
+  background-color: #000000AA;
+  padding: 12px;
+  margin-top: 8px;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* Form content */
 button {
-  background-color: #D8DBB3;
-  border: 1px solid #000000;
-  border-radius: 2pt;
-  padding: 2pt 3pt;
   cursor: pointer;
-  transition: 0.08s background-color;
+  border: 3px double #DD77DD;
+  border-radius: 12px;
+  background-color: #00000000;
+  color: #DD77DD;
+  font-family: CaviarDreams;
+  font-size: 18px;
+  text-shadow: 0 0 2px #FFFFFF88, 0 0 2px #FF00AB88, 0 0 1px #EE33FF88;
+  box-shadow: 0 0 2px #FFFFFF88, 0 0 2px #FF00AB88, 0 0 1px #EE33FF88;
+  transition: 0.04s ease-out text-shadow, 0.04s ease-out box-shadow, 0.04s ease-out color;
+}
+
+input[type="text"] {
+
 }
 
 button:hover {
-  background-color: #E9ECC4;
-}
-
-#header {
-  display: block;
-  background-color: #000000;
-  margin: 0 0 6vh 0;
-  position: relative;
-}
-
-#header #title {
-  text-align: center;
-  padding: 2vh 6vw;
-  font-family: Title;
-  color: #F6F6ED;
-  background-image: url("../img/london_bg.jpg");
-  background-size: cover;
-  background-position: center;
-  font-size: 8vw;
-}
-
-#header #title #text {
-  text-shadow: 1px 1px 8px #000000AA;
-}
-
-#content {
-  padding: 0 2vw;
-}
-
-/* Table */
-#expensesTable {
-  user-select: none;
-  -moz-user-select: none;
-  box-shadow: 0.5pt 0.5px 2pt 1px #00000022;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  color: #000000;
-  text-align: center;
-  cursor: default;
-}
-
-caption {
-  background-color: #7E833F;
   color: #FFFFFF;
-  border: 1px solid #00000022;
-  border-bottom: none;
-  padding: 6pt 0;
-  font-family: Bold;
+  border: 3px double #FFFFFF;
+  text-shadow: 0 0 2px #FFFFFF, 0 0 2px #FF00AB, 0 0 1px #EE33FF;
+  box-shadow: 0 0 2px #FFFFFF, 0 0 2px #FF00AB, 0 0 1px #EE33FF;
 }
 
-th {
-  background-color: #B4B96F;
-  padding: 6pt 0;
-  font-family: Bold;
-}
-
-td {
-  padding: 2pt;
-}
-
-th, td {
-  border: 1px solid #00000022;
-}
-
-tr {
-  transition: 0.08s background-color;
-}
-
-tr:hover {
-  background-color: #0000001A;
-}
-tr:nth-child(odd):hover {
-  background-color: #bfc495;
-}
-
-tr:nth-child(odd) {
-  background-color: #D8DBB3;
+/* Classes */
+/* Go to top link (articles) */
+.gtt {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  display: block;
+  text-align: center;
 }
