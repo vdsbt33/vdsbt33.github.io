@@ -36,6 +36,9 @@ body {
   background-image: url("../img/background_small.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
