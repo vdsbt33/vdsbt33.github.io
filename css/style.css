@@ -1,0 +1,119 @@
+/* Fonts */
+
+@font-face {
+  font-family: Regular;
+  src: url("./font/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: Bold;
+  src: url("./font/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: Thin;
+  src: url("./font/Roboto-Thin.ttf");
+}
+
+@font-face {
+  font-family: Title;
+  src: url("./font/PeaceSans-Regular.ttf");
+}
+
+/* Globals */
+
+html {
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Regular;
+  margin: 0;
+  background-color: #d2dbd7;
+}
+
+header {
+  text-align: center;
+  background-color: #e3ebed;
+  color: #222;
+  padding: 6pt 0 0 0;
+  margin-bottom: 18pt;
+}
+
+/* Title in Header  */
+
+header #title {
+  display: inline-block;
+  padding: 0 12pt;
+  font-family: Title;
+  font-size: 24pt;
+  margin-bottom: 10pt;
+  border-top: 4px solid #222;
+  border-bottom: 4px solid #222;
+  user-select: none;
+  -moz-user-select: none;
+  cursor: default;
+}
+
+/* Line A drawing for title */
+header #title #line-a {
+  width: 3pt;
+  height: 14pt;
+  display: block;
+  float: left;
+  left: -12pt;
+  position: relative;
+  background-color: #222;
+}
+
+/* Line B drawing for title */
+header #title #line-b {
+  width: 3pt;
+  height: 14pt;
+  display: block;
+  float: right;
+  top: 20pt;
+  left: 12pt;
+  position: relative;
+  background-color: #222;
+}
+
+/* Navigation menu */
+nav {
+  font-size: 0;
+  background-image: linear-gradient(90deg, #f45d5d 50%, #7a79d8 50%);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding: 6pt;
+}
+
+nav a {
+  font-size: 12pt;
+  text-decoration: none;
+  color: #AAA;
+  font-family: Bold;
+  background-color: #444;
+  padding: 6pt 6pt 6pt 6pt;
+  transition: 0.05s ease-out background-color, 0.05s ease-out color;
+  user-select: none;
+  -moz-user-select: none;
+}
+
+nav a:hover {
+  background-color: #222;
+  color: #FFF;
+}
+
+/* Article */
+article {
+  margin: 0 12pt;
+}
