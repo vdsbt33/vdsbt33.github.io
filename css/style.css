@@ -56,6 +56,10 @@ header #title {
   cursor: default;
 }
 
+.container-flex {
+  display: flex;
+}
+
 /* Line A drawing for title */
 header #title #line-a {
   width: 3pt;
@@ -73,7 +77,8 @@ header #title #line-b {
   height: 14pt;
   display: block;
   float: right;
-  top: 20pt;
+  align-self: flex-end;
+  margin-top: auto;
   left: 12pt;
   position: relative;
   background-color: #222;
