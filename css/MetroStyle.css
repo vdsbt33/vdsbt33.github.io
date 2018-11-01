@@ -1,0 +1,195 @@
+/*
+Colors:
+
+Darkest Gray: #141414
+Darkest Gray Hover: #b0b7c7
+Darkest Gray Selected: #1f1f1f
+
+Dark Gray: #1e1719
+Dark Gray Menu: #1a1a1a
+
+Main Text: #ffffff
+Description Text: #929292
+
+Progress Blue: #6624e2
+*/
+
+/* Global */
+
+body {
+    margin: 0;
+    background-color: #141414;
+    color: #ffffff;
+    font-family: Segoe UI;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+h5 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    color: #929292;
+}
+
+a {
+    text-decoration: none;
+    color: #929292;
+}
+
+/* Identifiers */
+#top {
+    background-color: #141414;
+    display: inline-block;
+    background: #141414;
+    width: 100%;
+}
+
+#top #title {
+    margin: 6px 6px 6px 6px;
+
+    float: left;
+    cursor: default;
+}
+
+#top #title h1 {
+    font-size: 24px;
+}
+
+#top #menu {
+    margin: 0;
+    display: inline-block;
+    
+}
+
+#top #menu a {
+    font-weight: bold;
+    
+}
+
+#top #menu ol {
+    list-style: none;
+    margin: auto 0;
+    padding: 0;
+}
+
+#top #menu li {
+    float: left;
+    padding: 12px;
+}
+
+#top #menu li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+#top #menu .selected {
+    color: #ffffff;
+    background-color: #1f1f1f;
+}
+
+#center {
+    display: inline-block;
+    width: 100%;
+}
+
+#center #sidebar {
+    background-color: #1a1a1a;
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+
+#center #sidebar .sidebar-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: default;
+
+    color: #6624e2;
+    font-weight: bold;
+
+    margin: 12px 0 0 0;
+}
+
+#center #sidebar .sidebar-btn {
+    display: block;
+    width: 100%;
+    padding: 2px 0;
+    font-weight: normal;
+}
+
+#center #sidebar .sidebar-btn:hover {
+    color: #ffffff;
+    background-color: #303030;
+}
+
+#center #sidebar .sidebar-btn:hover {
+    color: #ffffff;
+}
+
+#center #content {
+    background-color: #1e1719;
+    width: 85%;
+    height: 100%;
+    float: left;
+}
+
+#center #content #pagecontent {
+    margin: 8px;
+}
+
+#bottom {
+    background-color: #141414;
+    display: inline-block;
+    color: #929292;
+    width: 100%;
+
+    text-align: center;
+}
+
+#bottom #copyright {
+    margin: 12px 0px;
+    cursor: default;
+}
+
+#bottom #links {
+    display: inline-block;
+    margin: 6px 0px 12px 0px;
+}
+
+#bottom ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#bottom li {
+    float: left;
+    margin: 0px 4px 0px 4px;
+    padding: 6px 12px;
+}
+
+#bottom li:hover {
+    color: #ffffff;
+    background-color: #1f1f1f;
+}
+
+
+/* Classes */
